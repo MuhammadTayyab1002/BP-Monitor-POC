@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --primary: #0ea5e9;
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            background: linear-gradient(to right, #0ea5e9, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .hero-text p {
+            font-size: 1.35rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #0ea5e9;
+            color: white;
+            border-radius: 9999px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgb(14 165 233 / 0.3);
+        }
+        
+        .schematic {
+            background: #1e2937;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+        
+        section {
+            padding: 5rem 2rem;
+            padding: top 10px;
+            border-radius: 10px;
+            max-width: 1200px;
+            margin-top: 0px;
+            margin: 50px auto;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .card {
+            background: #43628a;
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: transform 0.3s;
+            border: 1px solid rgb(11, 175, 252);
+        }
+        
+        .card:hover {
+            border-color: rgba(94, 7, 235, 0.7);
+            transform: translateY(-8px);
+        }
+        
+        .code-block {
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            font-family: ui-monospace, monospace;
+            font-size: 0.95rem;
+            overflow-x: auto;
+            border: 1px solid #334155;
+        }
+        
+        footer {
+            background: #0f172a;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid #334155;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        /* Altium Viewer Styles */
+        .altium-viewer-area {
+            display: flex;
+            flex-direction: column;
+            min-height: 680px;
+        }
+
+        .altium-controls {
+            padding: 0.8rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #0b1120cc;
+            border-radius: 1rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #1e2a44;
+        }
+
+        #altiumIframe {
+            background-color: #11161f;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+            transition: height 0.3s ease;
+        }
+        /* Viewer Cards */
+        .viewer-card {
+            background: #0a1020cc;
+            backdrop-filter: blur(8px);
+            border-radius: 1.8rem;
+            border: 1px solid #2c456e;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .viewer-title {
+            padding: 1.1rem 1.6rem;
+            background: rgba(0,0,0,0.35);
+            border-bottom: 1px solid #2a3a60;
+            font-size: 1.15rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #c5d9ff;
+        }
+
+        .viewer-body {
+            padding: 1.6rem;
+        }
